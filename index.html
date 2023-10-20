@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>World of Warcraft M</title>
+    <script
+      src="https://kit.fontawesome.com/cfabfc7038.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1 class="logo">
+          <a href="index.html"></a>
+        </h1>
+        <div class="nav_bg"></div>
+
+        <div id="nav">
+          <ul>
+            <li>
+              <a href="">
+                <span>소식 </span>
+                <i class="fa-solid fa-angle-right fa-rotate-90"></i
+              ></a>
+
+              <ul class="subMenu">
+                <li><a href="">공지사항</a></li>
+                <li><a href="">이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">
+                <span>게임소개</span>
+                <i class="fa-solid fa-angle-right fa-rotate-90"></i>
+              </a>
+              <ul class="subMenu">
+                <li><a href="">세계관</a></li>
+                <li><a href="">종족소개</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reserveBtn">
+          <span>사전예약</span>
+        </div>
+      </header>
+      <main>
+        <div class="bgVideo">
+          <video src="./src/video/bgVideo.mov" autoplay="1" muted loop></video>
+          <div class="videoLogo"></div>
+          <div class="btn">
+            <button>사전예약 하기 &rarr;</button>
+          </div>
+        </div>
+        <div class="event">
+          <h1>사전예약 이벤트</h1>
+          <div class="event__list">
+            <div class="event__list-item">
+              <div class="item__img"></div>
+              <span>에픽 무기</span>
+            </div>
+            <div class="event__list-item">
+              <div class="item__img"></div>
+              <span>에픽 무기</span>
+            </div>
+            <div class="event__list-item">
+              <div class="item__img"></div>
+              <span>에픽 무기</span>
+            </div>
+            <div class="event__list-item">
+              <div class="item__img"></div>
+              <span>에픽 무기</span>
+            </div>
+          </div>
+        </div>
+        <div class="character">
+          <div id="token">
+            <div class="card">
+              <div class="fsymbol">F</div>
+              <div class="bsymbol">B</div>
+            </div>
+          </div>
+          <h1>모험을 시작하세요</h1>
+          <p>
+            여기서 아제로스로 떠나는 모험을 시작하고 WoW를 모바일로
+            플레이해보세요!
+          </p>
+          <div class="btn">
+            <button>모든 종족 보기</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;400;700&display=swap");
+
+@import "./css/reset.css"; /*reset css*/
+@import "./css/variable.css";
+
+@import "./css/header.css";
+@import "./css/main.css";
+
+@import "./css/component/event.css";
+@import "./css/component/character.css";
+
+body,
+button {
+  font-family: "Hahmlet", serif;
+}
+
+#container {
+  width: 100%;
+}
