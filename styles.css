@@ -8,7 +8,7 @@
 
 @import "./css/component/event.css";
 @import "./css/component/character.css";
-
+@import "./css/component/dungeon.css";
 body,
 button {
   font-family: "Hahmlet", serif;

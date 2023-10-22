@@ -1,0 +1,61 @@
+.dungeon {
+  width: 100%;
+  height: 40rem;
+  background: linear-gradient(
+      to bottom,
+      rgba(17, 17, 19, 1) 5%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(17, 17, 19, 1) 95%
+    ),
+    url("/src/img/dungeon.png") 50% 50% / cover no-repeat;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  margin-top: 5rem;
+}
+
+.dungeon h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.dungeon p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.frame {
+  width: 100%;
+  height: 2rem;
+  background: url("/src/img/frame.png") 50% 50% / auto no-repeat;
+  transform: rotateX(180deg);
+  margin-bottom: 3rem;
+}
+.dungeon__contents-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.dungeon__bg {
+  width: 18%;
+  height: 20rem;
+  margin: 1rem;
+  border-radius: 15px 0 15px 0;
+  text-align: center;
+}
+.dungeon__bg:first-child {
+  background-color: tomato;
+}
+
+.dungeon__bg:nth-child(2) {
+  background-color: teal;
+}
+.dungeon__bg:nth-child(3) {
+  background-color: thistle;
+}
+.dungeon__bg:last-child {
+  background-color: turquoise;
+}
