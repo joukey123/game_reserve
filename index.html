@@ -17,12 +17,15 @@
           <a href="index.html"></a>
         </h1>
         <div class="nav_bg"></div>
-
         <div id="nav">
-          <ul>
+          <ul class="nav__menu">
+            <section>
+              <a href="index.html"> </a>
+              <button class="closeBtn">X</button>
+            </section>
             <li>
-              <a href="">
-                <span>소식 </span>
+              <a>
+                <span>소식</span>
                 <i class="fa-solid fa-angle-right fa-rotate-90"></i
               ></a>
 
@@ -32,7 +35,7 @@
               </ul>
             </li>
             <li>
-              <a href="">
+              <a>
                 <span>게임소개</span>
                 <i class="fa-solid fa-angle-right fa-rotate-90"></i>
               </a>
@@ -41,13 +44,18 @@
                 <li><a href="">종족소개</a></li>
               </ul>
             </li>
+            <div class="reserveBtn">
+              <span>사전예약</span>
+            </div>
           </ul>
         </div>
 
         <div class="reserveBtn">
           <span>사전예약</span>
         </div>
+        <section id="box" class="hidden"></section>
       </header>
+
       <main>
         <div class="bgVideo">
           <video src="./src/video/bgVideo.mov" autoplay="1" muted loop></video>
@@ -182,12 +190,45 @@
               <small class="adDetail">자세히보기</small>
             </div>
             <div class="submit">
-              <input type="button" value="에약하기" />
+              <input type="button" value="예약하기" />
             </div>
           </form>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <div class="footerColumn">
+          <div>
+            <ul class="footer__nav">
+              <li><a href="">회사소개</a> <span>|</span></li>
+              <li><a href="">채용안내</a> <span>|</span></li>
+              <li><a href="">이용약관</a> <span>|</span></li>
+              <li><a href="">게임이용등급안내</a> <span>|</span></li>
+              <li><a href="">개인정보처리방침</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              블리자드 엔터테인먼트 유한 회사
+              <br />주소: 06164 서울시 강남구 테헤란로 <br />
+              521 파르나스타워 15층 대표 번호: 1644-0727 | 팩스 번호:
+              (02)544-3038
+            </p>
+          </div>
+          <div>
+            <h1 class="blizzardLogo">
+              <a href="index.html"></a>
+            </h1>
+          </div>
+        </div>
+        <div class="footerColumn">
+          <div class="socialIcon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="app.js"></script>
   </body>

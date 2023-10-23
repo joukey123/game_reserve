@@ -5,16 +5,25 @@
 
 @import "./css/header.css";
 @import "./css/main.css";
+@import "./css/footer.css";
 
 @import "./css/component/event.css";
 @import "./css/component/character.css";
 @import "./css/component/dungeon.css";
 @import "./css/component/reserveform.css";
+
+@import "./css/media/media.css";
+
 body,
-button {
+button,
+input {
   font-family: "Hahmlet", serif;
 }
 
 #container {
   width: 100%;
+}
+
+.hidden {
+  display: none;
 }

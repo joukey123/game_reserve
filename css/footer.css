@@ -1,0 +1,39 @@
+footer {
+  background-color: black;
+  color: var(--font-color);
+  padding: 3rem 8rem;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__nav {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.footer__nav > li > span {
+  margin-right: 0.2rem;
+}
+
+footer p {
+  line-height: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blizzardLogo a {
+  width: 100px;
+  height: 50px;
+  display: block;
+  background: url("/src/img/blizzardLogo.png") 0% 0% / contain no-repeat;
+}
+
+.socialIcon {
+  display: flex;
+}
+.socialIcon div {
+  width: 3rem;
+  height: 3rem;
+  background-color: tomato;
+  margin-left: 1rem;
+}

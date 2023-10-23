@@ -39,3 +39,8 @@ main {
   cursor: pointer;
   font-size: 1rem;
 }
+.btn button:hover {
+  border-color: var(--yellow);
+  background: rgba(255, 255, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}

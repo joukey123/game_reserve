@@ -3,6 +3,12 @@ header {
   color: var(--font-color);
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5rem;
+  width: 100%;
+  z-index: 1;
 }
 .nav_bg {
   background-color: rgba(0, 0, 0, 0.5);
@@ -20,7 +26,7 @@ header .logo {
 header .logo a {
   display: block;
   color: var(--bg-color);
-  background: url("../src/img/logo.png") 50% 50% / 40% auto no-repeat;
+  background: url("../src/img/logo.png") 50% 50% / 10rem auto no-repeat;
   width: 100%;
   height: 100%;
 }
@@ -38,12 +44,15 @@ header #nav > ul > li {
   position: relative;
   margin-right: 2rem;
 }
+header #nav > ul > li:hover > a {
+  font-weight: bold;
+}
 header #nav ul li span {
   padding: 1rem;
   font-size: 1.2rem;
   margin: 1rem;
 }
-header #nav ul li i {
+i[class="fa-solid fa-angle-right fa-rotate-90"] {
   position: absolute;
   right: 10px;
 }
@@ -69,16 +78,31 @@ header #nav ul li i {
   padding: 0.5rem 0;
   color: var(--font-color);
 }
-
+.subMenu > li:hover a {
+  color: var(--yellow);
+  font-weight: bold;
+}
 header .reserveBtn {
-  width: 15%;
-  height: 5rem;
+  width: 13%;
+  height: 3.5rem;
   text-align: center;
-  line-height: 5rem;
+  line-height: 3.5rem;
   font-size: 1.2rem;
+  border-radius: 1rem;
   color: black;
   background-color: var(--yellow);
   font-weight: 700;
   margin-right: 5%;
   cursor: pointer;
+}
+header .reserveBtn:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(240, 219, 49, 1)
+  );
+}
+
+.menuBtn li i {
+  font-size: 1.5rem;
 }
