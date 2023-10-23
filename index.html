@@ -147,17 +147,17 @@
           <h1>사전 예약</h1>
           <form class="access">
             <div class="access__device">
-              <label for="AOS">AOS</label>
-              <input id="AOS" type="radio" />
-              <label for="IOS">IOS</label>
-              <input id="IOS" type="radio" />
+              <input id="AOS" type="radio" name="device" />
+              <label for="AOS">안드로이드</label>
+              <input id="IOS" type="radio" name="device" />
+              <label for="IOS">아이폰</label>
             </div>
             <div class="access__phone">
-              <input type="number" placeholder="전화번호를 입력해주세요" />
+              <input type="text" placeholder="전화번호를 입력해주세요" />
               <input type="button" value="인증번호 전송" />
             </div>
             <div class="access__number">
-              <input type="number" placeholder="인증번호를 입력해주세요" />
+              <input type="text" placeholder="인증번호를 입력해주세요" />
               <input type="button" value="인증번호 확인" />
             </div>
           </form>
@@ -167,14 +167,22 @@
               <label>아래 내용에 모두 동의합니다.</label>
             </div>
             <div class="access__agreement-info">
-              <input id="info" type="radio" />
-              <label>[필수] 사전예약을 위한 개인정보 수집/이용에 동의</label>
+              <div>
+                <input id="info" type="radio" />
+                <label>[필수] 사전예약을 위한 개인정보 수집/이용에 동의</label>
+              </div>
               <small class="infoDetail">자세히보기</small>
             </div>
             <div class="access__agreement-ad">
-              <input id="ad" type="radio" />
-              <label>[필수] 이벤트 안내를 위한 광고성 정보 수신 동의</label>
+              <div>
+                <input id="ad" type="radio" />
+                <label>[필수] 이벤트 안내를 위한 광고성 정보 수신 동의</label>
+              </div>
+
               <small class="adDetail">자세히보기</small>
+            </div>
+            <div class="submit">
+              <input type="button" value="에약하기" />
             </div>
           </form>
         </div>

@@ -1,0 +1,97 @@
+.reserveform {
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.reserveform h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+.access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.access__device {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+label[for="AOS"] {
+  margin-right: 2rem;
+}
+.access__phone,
+.access__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200%;
+  margin-bottom: 1rem;
+}
+.access__number {
+  margin-bottom: 2rem;
+}
+.access__phone input[type="button"] {
+  background-color: var(--yellow);
+}
+.access__number input[type="button"] {
+  background-color: rgb(78, 78, 78);
+}
+.reserveform input[type="button"] {
+  width: 40%;
+  border: 0px;
+  height: 3rem;
+  cursor: pointer;
+}
+.reserveform input[type="text"] {
+  width: 160%;
+  height: 3rem;
+  outline: 0;
+  text-indent: 0.5rem;
+  margin-right: 0.5rem;
+}
+.reserveform input[type="text"]::placeholder {
+  color: var(--gray);
+}
+.access__agreement {
+  font-size: 0.9rem;
+  width: 30rem;
+}
+.access__agreement div:nth-child(2) {
+  margin-bottom: 1rem;
+}
+.access__agreement-all {
+  padding-bottom: 1rem;
+  border-bottom: 0.5px solid var(--font-color);
+  margin-bottom: 1rem;
+}
+.access__agreement-info,
+.access__agreement-ad {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.infoDetail,
+.adDetail {
+  margin-top: 0.3rem;
+  margin-left: 9%;
+  color: var(--gray);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.infoDetail:hover,
+.adDetail:hover {
+  text-decoration: underline;
+}
+.submit input[type="button"] {
+  background-color: var(--yellow);
+  width: 100%;
+  margin-top: 2rem;
+  cursor: pointer;
+}

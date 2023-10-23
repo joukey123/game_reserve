@@ -9,6 +9,7 @@
 @import "./css/component/event.css";
 @import "./css/component/character.css";
 @import "./css/component/dungeon.css";
+@import "./css/component/reserveform.css";
 body,
 button {
   font-family: "Hahmlet", serif;
