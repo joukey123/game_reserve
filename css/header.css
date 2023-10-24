@@ -42,7 +42,8 @@ header #nav ul {
 }
 header #nav > ul > li {
   position: relative;
-  margin-right: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
 }
 header #nav > ul > li:hover > a {
   font-weight: bold;
@@ -52,9 +53,10 @@ header #nav ul li span {
   font-size: 1.2rem;
   margin: 1rem;
 }
+
 i[class="fa-solid fa-angle-right fa-rotate-90"] {
   position: absolute;
-  right: 10px;
+  right: 12px;
 }
 
 .subMenu {

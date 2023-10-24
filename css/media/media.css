@@ -84,6 +84,86 @@
   .closeBtn:hover {
     color: var(--yellow);
   }
+  .character {
+    background-position: 20% 0%;
+  }
+  .reserveform {
+    transform: scale(0.88);
+  }
+  .event {
+    height: 100vh;
+  }
+  .event__list {
+    flex-direction: column;
+  }
+  .event__list-item {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .event__list-item span {
+    top: 80%;
+  }
+  .item__img {
+    height: 15rem;
+  }
+  .event__list-item:first-child div {
+    background-position: 0 -5rem;
+  }
+  .event__list-item:nth-child(2) div {
+    background-position: 0 -7rem;
+  }
+  .event__list-item:nth-child(3) div {
+    background-position: 0 -6rem;
+  }
+  .event__list-item:last-child div {
+    background-position: 0 -8.5rem;
+  }
+  .dungeon__contents {
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: scroll;
+  }
+  .dungeon__contents::-webkit-scrollbar {
+    height: 3px;
+    width: 10px;
+    background-color: black;
+  }
+  .dungeon__contents::-webkit-scrollbar-thumb {
+    width: 3px;
+    height: 3px;
+    background-color: var(--yellow);
+  }
+  .dungeon__contents-img {
+    width: 250%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .dungeon__bg {
+    width: 100%;
+  }
+  .dungeon__contents-img {
+    height: 25rem;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footerColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+  .footerColumn:first-child {
+    order: 2;
+    text-align: center;
+  }
+  .footerColumn:last-child {
+    order: 1;
+    margin-bottom: 2rem;
+  }
   @keyframes slidedown {
     0% {
       height: 0;

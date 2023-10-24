@@ -16,15 +16,40 @@
 .event__list-item {
   width: 18%;
   margin: 1rem;
+  position: relative;
+  border: 0.3px solid rgba(0, 0, 0, 1);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 .item__img {
   height: 20rem;
-  background-color: tomato;
+}
+.event__list-item:hover div {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+.event__list-item:first-child div {
+  background: url("/src/img/e3.png") 50% -1rem / cover no-repeat;
+}
+.event__list-item:nth-child(2) div {
+  background: url("/src/img/e1.png") 50% 50% / cover no-repeat;
+}
+.event__list-item:nth-child(3) div {
+  background: url("/src/img/e2.png") 50% 50% / cover no-repeat;
+}
+.event__list-item:last-child div {
+  background: url("/src/img/e4.png") 50% -1rem / cover no-repeat;
 }
 .event__list-item span {
   display: block;
   width: 100%;
-  background-color: thistle;
-  padding: 1rem 0;
-  font-size: 1.8rem;
+  background: url("/src/img/textbg.png") 50% 50% / cover no-repeat;
+  background-color: rgba(0, 0, 0, 1);
+  font-size: 1.2rem;
+  padding: 0.8rem 0;
+  line-height: 1.6rem;
+  color: var(--font-color);
+  position: absolute;
+  top: 85%;
+  left: 0;
 }

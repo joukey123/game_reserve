@@ -1,6 +1,6 @@
-.dungeon {
+.dungeon,
+.pvp {
   width: 100%;
-  height: 40rem;
   background: linear-gradient(
       to bottom,
       rgba(17, 17, 19, 1) 5%,
@@ -13,14 +13,16 @@
   margin-top: 5rem;
 }
 
-.dungeon h1 {
+.dungeon h1,
+.pvp h1 {
   text-align: center;
   width: 100%;
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
 }
-.dungeon p {
+.dungeon p,
+.pvp p {
   text-align: center;
   font-size: 1rem;
   line-height: 1.5;
@@ -45,17 +47,60 @@
   margin: 1rem;
   border-radius: 15px 0 15px 0;
   text-align: center;
-}
-.dungeon__bg:first-child {
-  background-color: tomato;
+  position: relative;
+  border: 1px solid black;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
-.dungeon__bg:nth-child(2) {
-  background-color: teal;
+.dungeon__bg:hover {
+  border: 0.5px solid var(--yellow);
+  transform: translateY(-2rem);
+  transition: transform 0.3s ease-in-out;
 }
-.dungeon__bg:nth-child(3) {
-  background-color: thistle;
+.dungeon__bg-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1.5rem 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
-.dungeon__bg:last-child {
-  background-color: turquoise;
+.dungeon__bg-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dungeon__bg-text span {
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+}
+.dungeon .dungeon__bg:first-child {
+  background: url("/src/img/d1.jpeg") 50% 50% / cover no-repeat;
+}
+
+.dungeon .dungeon__bg:nth-child(2) {
+  background: url("/src/img/dd2.jpeg") 50% 50% / cover no-repeat;
+}
+.dungeon .dungeon__bg:nth-child(3) {
+  background: url("/src/img/d3.jpeg") 50% 50% / cover no-repeat;
+}
+.dungeon .dungeon__bg:last-child {
+  background: url("/src/img/d4.jpeg") 50% 50% / cover no-repeat;
+}
+
+.pvp .dungeon__bg:first-child {
+  background: url("/src/img/pvp1.jpeg") 50% 50% / cover no-repeat;
+}
+.pvp .dungeon__bg:nth-child(2) {
+  background: url("/src/img/pvp2.jpeg") 30% 50% / cover no-repeat;
+}
+.pvp .dungeon__bg:nth-child(3) {
+  background: url("/src/img/pvp3.jpeg") 30% 50% / cover no-repeat;
+}
+
+.pvp .dungeon__bg:last-child {
+  background: url("/src/img/pvp4.jpeg") 30% 50% / cover no-repeat;
 }
