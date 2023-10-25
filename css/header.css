@@ -26,7 +26,8 @@ header .logo {
 header .logo a {
   display: block;
   color: var(--bg-color);
-  background: url("../src/img/logo.png") 50% 50% / 10rem auto no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/logo.png") 50%
+    50% / 10rem auto no-repeat;
   width: 100%;
   height: 100%;
 }

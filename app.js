@@ -69,7 +69,7 @@ const hadleMobileScreen = () => {
     ul.appendChild(li);
     nav.appendChild(ul);
     logo.style.background =
-      "url('../src/img/mlogo.png') 50% 50% / 3rem no-repeat";
+      "url('http://server.movingtail.com/minwoo/projectImg/mlogo.png') 50% 50% / 3rem no-repeat";
     closeBtn.classList.remove("hidden");
     menu.style.animation = "";
     box.classList.add("hidden");

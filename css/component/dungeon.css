@@ -7,7 +7,8 @@
       rgba(255, 255, 255, 0) 70%,
       rgba(17, 17, 19, 1) 95%
     ),
-    url("/src/img/dungeon.png") 50% 50% / cover no-repeat;
+    url("http://server.movingtail.com/minwoo/projectImg/dungeon.png") 50% 50% /
+      cover no-repeat;
   background-color: var(--bg-color);
   color: var(--font-color);
   margin-top: 5rem;
@@ -31,7 +32,8 @@
 .frame {
   width: 100%;
   height: 2rem;
-  background: url("/src/img/frame.png") 50% 50% / auto no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/frame.png")
+    50% 50% / auto no-repeat;
   transform: rotateX(180deg);
   margin-bottom: 3rem;
 }
@@ -78,29 +80,37 @@
   border-radius: 1rem;
 }
 .dungeon .dungeon__bg:first-child {
-  background: url("/src/img/d1.jpeg") 50% 50% / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/d1.jpeg") 50%
+    50% / cover no-repeat;
 }
 
 .dungeon .dungeon__bg:nth-child(2) {
-  background: url("/src/img/dd2.jpeg") 50% 50% / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/dd2.jpeg") 50%
+    50% / cover no-repeat;
 }
 .dungeon .dungeon__bg:nth-child(3) {
-  background: url("/src/img/d3.jpeg") 50% 50% / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/d3.jpeg") 50%
+    50% / cover no-repeat;
 }
 .dungeon .dungeon__bg:last-child {
-  background: url("/src/img/d4.jpeg") 50% 50% / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/d4.jpeg") 50%
+    50% / cover no-repeat;
 }
 
 .pvp .dungeon__bg:first-child {
-  background: url("/src/img/pvp1.jpeg") 50% 50% / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/pvp1.jpeg")
+    50% 50% / cover no-repeat;
 }
 .pvp .dungeon__bg:nth-child(2) {
-  background: url("/src/img/pvp2.jpeg") 30% 50% / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/pvp2.jpeg")
+    30% 50% / cover no-repeat;
 }
 .pvp .dungeon__bg:nth-child(3) {
-  background: url("/src/img/pvp3.jpeg") 30% 50% / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/pvp3.jpeg")
+    30% 50% / cover no-repeat;
 }
 
 .pvp .dungeon__bg:last-child {
-  background: url("/src/img/pvp4.jpeg") 30% 50% / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/pvp4.jpeg")
+    30% 50% / cover no-repeat;
 }
