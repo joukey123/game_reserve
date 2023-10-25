@@ -89,8 +89,32 @@
     background-position: 20% 0%;
   }
   .reserveform {
-    transform: scale(0.88);
+    width: 90%;
+    margin: 0 auto;
   }
+
+  .access {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .access__phone,
+  .access__number {
+    position: relative;
+    width: 100%;
+  }
+  .access__agreement {
+    width: 100%;
+  }
+  .access__phone input[type="button"],
+  .access__number input[type="button"] {
+    position: absolute;
+    right: 0.5%;
+    width: 25%;
+  }
+  .reserveform input[type="text"] {
+    margin: 0;
+  }
+
   .event {
     height: 100vh;
   }

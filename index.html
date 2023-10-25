@@ -182,10 +182,10 @@
           <h1>사전 예약</h1>
           <form class="access">
             <div class="access__device">
-              <input id="AOS" type="radio" name="device" />
-              <label for="AOS">안드로이드</label>
-              <input id="IOS" type="radio" name="device" />
-              <label for="IOS">아이폰</label>
+              <input id="aos" type="radio" name="device" />
+              <label for="aos">안드로이드</label>
+              <input id="ios" type="radio" name="device" />
+              <label for="ios">아이폰</label>
             </div>
             <div class="access__phone">
               <input type="text" placeholder="전화번호를 입력해주세요" />
@@ -199,19 +199,23 @@
           <form class="access__agreement">
             <div class="access__agreement-all">
               <input id="all" type="radio" />
-              <label>아래 내용에 모두 동의합니다.</label>
+              <label for="all">아래 내용에 모두 동의합니다.</label>
             </div>
             <div class="access__agreement-info">
               <div>
                 <input id="info" type="radio" />
-                <label>[필수] 사전예약을 위한 개인정보 수집/이용에 동의</label>
+                <label for="info"
+                  >[필수] 사전예약을 위한 개인정보 수집/이용에 동의</label
+                >
               </div>
               <small class="infoDetail">자세히보기</small>
             </div>
             <div class="access__agreement-ad">
               <div>
                 <input id="ad" type="radio" />
-                <label>[필수] 이벤트 안내를 위한 광고성 정보 수신 동의</label>
+                <label for="ad"
+                  >[필수] 이벤트 안내를 위한 광고성 정보 수신 동의</label
+                >
               </div>
 
               <small class="adDetail">자세히보기</small>

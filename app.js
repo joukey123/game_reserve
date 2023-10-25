@@ -7,6 +7,18 @@ const reserveBtn = document.querySelector(".reserveBtn");
 const box = document.getElementById("box");
 const lis = menu.querySelectorAll("li");
 const closeBtn = document.querySelector(".closeBtn");
+const allAccess = document.querySelector("#all");
+const infoAccess = document.querySelector("#info");
+const adAccess = document.querySelector("#ad");
+const phoneSendBtn = document.querySelector(
+  ".access__phone input[type='button']"
+);
+const mql = window.matchMedia("(max-width: 950px)");
+
+let isClicked = true; //allAgree
+let isInfoClicked = true; //infoAgree
+let isAdClicked = true; //adAgree
+
 const handleHideMenu = () => {
   for (const subMenu of subMenus) {
     subMenu.style.visibility = "hiddne";
@@ -24,8 +36,6 @@ const handleShowMenu = () => {
   navBg.style.visibility = "visible";
   navBg.style.opacity = 1;
 };
-
-const mql = window.matchMedia("(max-width: 950px)");
 
 function handleHideMobileMenu(ul) {
   ul.id = "";
@@ -91,8 +101,65 @@ const hadleMobileScreen = () => {
   }
 };
 
-hadleMobileScreen();
+const handleClickAccess = () => {
+  if (isClicked) {
+    infoAccess.checked = true;
+    adAccess.checked = true;
+    isClicked = false;
+    isInfoClicked = false;
+    isAdClicked = false;
+  } else {
+    allAccess.checked = false;
+    infoAccess.checked = false;
+    adAccess.checked = false;
+    isClicked = true;
+    isInfoClicked = true;
+    isAdClicked = true;
+  }
+};
+const handleClickInfoAccess = () => {
+  if (isInfoClicked) {
+    infoAccess.checked = true;
+    isInfoClicked = false;
+  } else {
+    infoAccess.checked = false;
+    isInfoClicked = true;
+  }
+  handleCheckAccess();
+};
 
+const handleClickadAccess = () => {
+  if (isAdClicked) {
+    adAccess.checked = true;
+    isAdClicked = false;
+  } else {
+    adAccess.checked = false;
+    isAdClicked = true;
+  }
+  handleCheckAccess();
+};
+
+const handleCheckAccess = () => {
+  if (infoAccess.checked && adAccess.checked) {
+    allAccess.checked = true;
+    isClicked = false;
+  } else {
+    allAccess.checked = false;
+    isClicked = true;
+  }
+};
+const handleSendPhone = () => {
+  const accessTokenConfirm = document.querySelector(
+    ".access__number input[type='button']"
+  );
+  accessTokenConfirm.style.backgroundColor = "var(--yellow)";
+};
+
+hadleMobileScreen();
+phoneSendBtn.addEventListener("click", handleSendPhone);
+adAccess.addEventListener("click", handleClickadAccess);
+infoAccess.addEventListener("click", handleClickInfoAccess);
+allAccess.addEventListener("click", handleClickAccess);
 reserveBtn.addEventListener("mouseover", handleHideMenu);
 mql.addEventListener("change", hadleMobileScreen);
 closeBtn.addEventListener("click", handleCloseSlideMenu);

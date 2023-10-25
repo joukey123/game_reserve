@@ -91,7 +91,6 @@ header .reserveBtn {
   text-align: center;
   line-height: 3.5rem;
   font-size: 1.2rem;
-  border-radius: 1rem;
   color: black;
   background-color: var(--yellow);
   font-weight: 700;
