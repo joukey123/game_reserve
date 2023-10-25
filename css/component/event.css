@@ -29,21 +29,26 @@
   transform: scale(1.1);
 }
 .event__list-item:first-child div {
-  background: url("/src/img/e3.png") 50% -1rem / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/e3.png") 50% -1rem /
+    cover no-repeat;
 }
 .event__list-item:nth-child(2) div {
-  background: url("/src/img/e1.png") 50% 50% / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/e1.png") 50%
+    50% / cover no-repeat;
 }
 .event__list-item:nth-child(3) div {
-  background: url("/src/img/e2.png") 50% 50% / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/e2.png") 50%
+    50% / cover no-repeat;
 }
 .event__list-item:last-child div {
-  background: url("/src/img/e4.png") 50% -1rem / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/e4.png") 50% -1rem /
+    cover no-repeat;
 }
 .event__list-item span {
   display: block;
   width: 100%;
-  background: url("/src/img/textbg.png") 50% 50% / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/textbg.png")
+    50% 50% / cover no-repeat;
   background-color: rgba(0, 0, 0, 1);
   font-size: 1.2rem;
   padding: 0.8rem 0;

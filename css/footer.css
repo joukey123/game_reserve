@@ -25,7 +25,8 @@ footer p {
   width: 100px;
   height: 50px;
   display: block;
-  background: url("/src/img/blizzardLogo.png") 0% 0% / contain no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/blizzardLogo.png")
+    0% 0% / contain no-repeat;
 }
 
 .socialIcon {

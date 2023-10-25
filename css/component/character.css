@@ -24,11 +24,13 @@
 }
 
 .fsymbol {
-  background: url("/src/img/asymbol.png") 0% 0% / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/asymbol.png")
+    0% 0% / cover no-repeat;
 }
 
 .bsymbol {
-  background: url("/src/img/hsymbol.png") 0% 0% / cover no-repeat;
+  background: url("http://server.movingtail.com/minwoo/projectImg/hsymbol.png")
+    0% 0% / cover no-repeat;
   transform: rotateY(180deg);
 }
 
@@ -49,7 +51,8 @@
       rgba(255, 255, 255, 0) 70%,
       rgba(17, 17, 19, 1) 95%
     ),
-    url("/src/img/bg.png") 50% 0% / cover no-repeat;
+    url("http://server.movingtail.com/minwoo/projectImg/bg.png") 50% 0% / cover
+      no-repeat;
   background-color: var(--bg-color);
   color: var(--font-color);
 }
@@ -79,7 +82,7 @@
 /* .character__alliance {
   width: 50%;
   height: 100vh;
-  background: url("/src/img/Alliance.png") 50% 50% / 100% auto no-repeat fixed;
+  background: url("http://server.movingtail.com/minwoo/projectImg/Alliance.png") 50% 50% / 100% auto no-repeat fixed;
   background-size: cover;
   filter: brightness(30%);
 }
