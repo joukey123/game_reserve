@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
+  position: relative;
 }
 
 .reserveform h1 {
@@ -35,6 +36,13 @@ label[for="aos"] {
 }
 .access__number {
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.timer {
+  position: absolute;
+  color: black;
+  right: 28%;
 }
 .access__phone input[type="button"] {
   background-color: var(--yellow);
@@ -54,10 +62,13 @@ label[for="aos"] {
   outline: 0;
   text-indent: 0.5rem;
   margin-right: 0.5rem;
+  background-color: white;
+  border: 0;
 }
 .reserveform input[type="text"]::placeholder {
   color: var(--gray);
 }
+
 .access__agreement {
   font-size: 0.9rem;
   width: 30rem;
@@ -94,4 +105,30 @@ label[for="aos"] {
   width: 100%;
   margin-top: 2rem;
   cursor: pointer;
+}
+
+.message {
+  background-color: tomato;
+  width: 20rem;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 2rem;
+  animation: messageMove 2s ease-in-out;
+  position: absolute;
+  bottom: 5rem;
+  opacity: 0;
+}
+.ok {
+  background-color: green;
+}
+@keyframes messageMove {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

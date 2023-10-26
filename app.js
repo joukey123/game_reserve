@@ -13,6 +13,18 @@ const adAccess = document.querySelector("#ad");
 const phoneSendBtn = document.querySelector(
   ".access__phone input[type='button']"
 );
+const timerSpan = document.createElement("span");
+const accessNumber = document.querySelector(".access__number");
+const cards = document.querySelectorAll(".dungeon__bg");
+const submit = document.querySelector("input[value='예약하기']");
+const asd = () => {
+  if (adAccess.checked && infoAccess.checked && allAccess.checked) {
+    console.log("확인");
+  } else {
+    console.log("동의해주세요");
+  }
+};
+submit.addEventListener("click", asd);
 const mql = window.matchMedia("(max-width: 950px)");
 
 let isClicked = true; //allAgree
@@ -148,14 +160,101 @@ const handleCheckAccess = () => {
     isClicked = true;
   }
 };
-const handleSendPhone = () => {
-  const accessTokenConfirm = document.querySelector(
-    ".access__number input[type='button']"
-  );
-  accessTokenConfirm.style.backgroundColor = "var(--yellow)";
+
+let time = 60;
+let min = 0;
+let sec = 0;
+let intervalId;
+const accessTokenConfirm = document.querySelector(
+  ".access__number input[type='button']"
+);
+const reserveForm = document.querySelector(".reserveform");
+
+const deleteErrorMessage = () => {
+  reserveForm.querySelector(".message").remove();
+  accessTokenConfirm.addEventListener("click", handleAccessToken);
 };
 
+const handleAccessToken = () => {
+  const message = document.createElement("span");
+  reserveForm.appendChild(message);
+  message.className = "message";
+
+  const inputToken = document.querySelector("input[name=access_token]");
+  if (inputToken.value) {
+    clearInterval(intervalId);
+    timerSpan.innerText = "인증완료";
+    time = 60;
+    message.classList.add("ok");
+    message.innerText = "인증을 완료했습니다.";
+    accessTokenConfirm.removeEventListener("click", handleAccessToken);
+    setTimeout(deleteErrorMessage, 2000);
+    phoneSendBtn.addEventListener("click", handleSendPhone);
+  } else {
+    message.innerText = "인증번호를 입력해주세요.";
+    accessTokenConfirm.removeEventListener("click", handleAccessToken);
+    setTimeout(deleteErrorMessage, 2000);
+  }
+};
+const handleSendPhone = () => {
+  accessTokenConfirm.style.backgroundColor = "var(--yellow)";
+  accessTokenConfirm.addEventListener("click", handleAccessToken);
+  handleTimer();
+};
+
+//3분 타이머 함수
+const timer = () => {
+  min = String(Math.floor(time / 60)).padStart(2, 0);
+  sec = String(time % 60).padStart(2, 0);
+
+  timerSpan.innerText = `${min} : ${sec}`;
+  timerSpan.className = "timer";
+  accessNumber.appendChild(timerSpan);
+  phoneSendBtn.removeEventListener("click", handleSendPhone);
+  if (time < 0) {
+    clearInterval(intervalId);
+    timerSpan.innerText = "시간초과";
+    time = 61;
+    phoneSendBtn.addEventListener("click", handleSendPhone);
+  }
+  time--;
+};
+const handleTimer = () => {
+  timer();
+  intervalId = setInterval(timer, 1000);
+};
+
+const handleCloseModal = (event) => {
+  const modal = event.target.parentElement.parentElement;
+  modal.remove();
+};
+function handleCard() {
+  const bigImgBox = document.createElement("div");
+  const imgFrame = document.createElement("div");
+  const bigImg = document.createElement("img");
+  bigImgBox.className = "modal";
+  const modalCloseBtn = document.createElement("button");
+  modalCloseBtn.innerText = "X";
+  modalCloseBtn.className = "modal__closeBtn";
+  modalCloseBtn.addEventListener("click", handleCloseModal);
+  const backgroundinfo = getComputedStyle(this).getPropertyValue("background");
+  const regex = /"(.*)"/;
+  const url = backgroundinfo.split(regex)[1];
+
+  bigImg.src = `${url}`;
+  bigImgBox.appendChild(imgFrame);
+  imgFrame.appendChild(modalCloseBtn);
+  imgFrame.appendChild(bigImg);
+  document.body.appendChild(bigImgBox);
+}
+
 hadleMobileScreen();
+
+const contents = document.querySelectorAll(".dungeon__contents-img");
+
+for (let card of cards) {
+  card.addEventListener("click", handleCard);
+}
 phoneSendBtn.addEventListener("click", handleSendPhone);
 adAccess.addEventListener("click", handleClickadAccess);
 infoAccess.addEventListener("click", handleClickInfoAccess);

@@ -78,7 +78,7 @@
   padding: 0.3rem 0.6rem;
   border-radius: 1rem;
 }
-.dungeon .dungeon__bg:first-child {
+.dungeon__bg:first-child {
   background: url("http://server.movingtail.com/minwoo/projectImg/d1.jpeg") 50%
     50% / cover no-repeat;
 }
