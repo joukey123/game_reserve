@@ -113,14 +113,60 @@ label[for="aos"] {
   text-align: center;
   padding: 1rem 0;
   border-radius: 2rem;
-  animation: messageMove 2s ease-in-out;
+  animation: messageMove 1s linear;
   position: absolute;
   bottom: 5rem;
   opacity: 0;
 }
 .ok {
-  background-color: green;
+  background-color: teal;
 }
+
+.popup__box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.success__box {
+  border: 0.5px solid var(--yellow);
+  box-shadow: 1px 1px 4px black;
+  background-color: black;
+  width: 35rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 30%,
+      rgba(0, 9, 9, 1) 40%
+    ),
+    url("/src/img/subg.jpg") 50% 0% / contain no-repeat;
+  position: relative;
+}
+.success__box img:first-child {
+  width: 100%;
+  height: 20rem;
+  z-index: 1;
+  position: absolute;
+  top: -70px;
+  left: -0;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 80%
+    ),
+    url("/src/img/su1.png") 50% 0% / contain no-repeat;
+}
+
 @keyframes messageMove {
   0% {
     opacity: 1;
