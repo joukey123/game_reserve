@@ -139,32 +139,71 @@ label[for="aos"] {
   border: 0.5px solid var(--yellow);
   box-shadow: 1px 1px 4px black;
   background-color: black;
-  width: 35rem;
-  height: 50rem;
+  width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 30%,
-      rgba(0, 9, 9, 1) 40%
+      rgba(0, 9, 9, 1) 60%
     ),
-    url("/src/img/subg.jpg") 50% 0% / contain no-repeat;
+    url("http://server.movingtail.com/minwoo/projectImg/subg.jpg") 50% 0% /
+      contain no-repeat;
   position: relative;
 }
 .success__box img:first-child {
   width: 100%;
-  height: 20rem;
   z-index: 1;
   position: absolute;
-  top: -70px;
+  top: 95px;
   left: -0;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 50%,
-      rgba(0, 0, 0, 1) 80%
-    ),
-    url("/src/img/su1.png") 50% 0% / contain no-repeat;
+
+  /* background: url("/src/img/su1.png") 50% 50% / cover no-repeat; */
+}
+.success__box > div:nth-child(2) {
+  color: var(--font-color);
+  margin-top: 20rem;
+  text-align: center;
+}
+.success__box div:nth-child(2) h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.success__box div:nth-child(2) p {
+  font-size: 1.2rem;
+}
+.success__box div:nth-child(3) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.success__box div:nth-child(3) > div:first-child {
+  width: 40%;
+  height: 3rem;
+  background: url("http://server.movingtail.com/minwoo/projectImg/googlePlay.png")
+    50% 50% / contain no-repeat;
+  cursor: pointer;
+  margin: 1rem;
+}
+.success__box div:nth-child(3) > div:last-child {
+  width: 40%;
+  height: 3rem;
+  background: url("http://server.movingtail.com/minwoo/projectImg/appStore.png")
+    50% 50% / contain no-repeat;
+  cursor: pointer;
+  margin: 1rem;
+}
+.success__box input[type="button"]:last-child {
+  background-color: var(--yellow);
+  color: var(--bg--color);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin: 2rem 0;
+  cursor: pointer;
 }
 
 @keyframes messageMove {

@@ -298,9 +298,10 @@ const handleReserveBtn = () => {
     const p = document.createElement("p");
     popUpBox.className = "popup__box";
     reserveSuccessBox.className = "success__box";
-    // succesBoxImg.src = "/src/img/su1.png";
+    succesBoxImg.src =
+      "http://server.movingtail.com/minwoo/projectImg/model.png";
     btn.type = "button";
-    btn.innerText = "완료";
+    btn.value = "완료";
     h1.innerText = "아제로스에서 다양한 모험을 경험하세요.";
     p.innerText = "예약해주셔서 감사합니다!";
 
@@ -315,6 +316,9 @@ const handleReserveBtn = () => {
     downloadBox.appendChild(iosImg);
 
     reserveSuccessBox.appendChild(btn);
+    btn.addEventListener("click", () => {
+      popUpBox.remove();
+    });
   } else if (accessTokenConfirm.value === "인증번호 확인") {
     createMessage();
     message.innerText = "휴대전화 인증을 진행해주세요.";
